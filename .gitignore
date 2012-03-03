@@ -34,3 +34,6 @@
 /public/assets
 /tmp
 /vendor/bundle
+
+# project tracking file
+ecatalog_progress_jmd.rtf
