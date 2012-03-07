@@ -1,21 +1,24 @@
-<h1>Listing deposits</h1>
-
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @deposits.each do |deposit| %>
-  <tr>
-    <td><%= link_to 'Show', deposit %></td>
-    <td><%= link_to 'Edit', edit_deposit_path(deposit) %></td>
-    <td><%= link_to 'Destroy', deposit, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+<h1>Deposits</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Created at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @deposits.each do |deposit| %>
+      <tr>
+        <td><%= deposit.id %></td>
+        <td><%= deposit.created_at %></td>
+        <td>
+          <%= link_to 'Edit', edit_deposit_path(deposit), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', deposit_path(deposit), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Deposit', new_deposit_path %>
+<%= link_to 'New', new_deposit_path, :class => 'btn btn-primary' %>

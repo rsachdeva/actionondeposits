@@ -1,17 +1,10 @@
-<%= form_for(@deposit) do |f| %>
-  <% if @deposit.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@deposit.errors.count, "error") %> prohibited this deposit from being saved:</h2>
+<%= form_for @deposit, :html => { :class => 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> Deposit</legend>
 
-      <ul>
-      <% @deposit.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', deposits_path, :class => 'btn' %>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </fieldset>
 <% end %>

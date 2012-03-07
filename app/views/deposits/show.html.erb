@@ -1,5 +1,7 @@
-<p id="notice"><%= notice %></p>
+<h1>Deposit</h1>
 
-
-<%= link_to 'Edit', edit_deposit_path(@deposit) %> |
-<%= link_to 'Back', deposits_path %>
+<div class="form-actions">
+  <%= link_to 'Back', deposits_path, :class => 'btn'  %>
+  <%= link_to 'Edit', edit_deposit_path(@deposit), :class => 'btn' %>
+  <%= link_to 'Delete', deposit_path(@deposit), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>
