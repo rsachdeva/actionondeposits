@@ -14,8 +14,16 @@
 ActiveRecord::Schema.define(:version => 20120307052446) do
 
   create_table "deposits", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "bank_name"
+    t.integer  "account_number"
+    t.decimal  "amount"
+    t.integer  "term_in_days"
+    t.decimal  "apr"
+    t.integer  "compounding_times"
+    t.decimal  "apy"
+    t.date     "start_date"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
 end
