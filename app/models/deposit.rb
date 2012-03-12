@@ -3,7 +3,8 @@ class Deposit
   include Mongoid::Timestamps
 
   field :bank_name
-  field :account_number, :type => Integer
+  field :account_number
+  field :fixed_income_account_type
   field :amount, :type => BigDecimal
   field :term_in_days, :type => Integer
   field :apr, :type => BigDecimal

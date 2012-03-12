@@ -2,14 +2,30 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Created at</th>
+      <th>Bank Name</th>
+      <th>Account Number</th>
+      <th>Account Type</th>
+      <th>Account</th>
+      <th>Term In Days</th>
+      <th>APR</th>
+      <th>Compounding Times</th>
+      <th>APY</th>
+      <th>Start Date</th>
       <th>Actions</th>
     </tr>
   </thead>
   <tbody>
     <% @deposits.each do |deposit| %>
       <tr>
-        <td><%= deposit.created_at %></td>
+        <td><%= deposit.bank_name %></td>
+        <td><%= deposit.account_number %></td>
+        <td><%= deposit.fixed_income_account_type %></td>
+        <td><%= deposit.amount %></td>
+        <td><%= deposit.term_in_days %></td>
+        <td><%= deposit.apr %></td>
+        <td><%= deposit.compounding_times %></td>
+        <td><%= deposit.apy %></td>
+        <td><%= deposit.start_date %></td>
         <td>
           <%= link_to 'Edit', edit_deposit_path(deposit), :class => 'btn btn-mini' %>
           <%= link_to 'Destroy', deposit_path(deposit), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
