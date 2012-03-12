@@ -2,7 +2,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
       <th>Created at</th>
       <th>Actions</th>
     </tr>
@@ -10,7 +9,6 @@
   <tbody>
     <% @deposits.each do |deposit| %>
       <tr>
-        <td><%= deposit.id %></td>
         <td><%= deposit.created_at %></td>
         <td>
           <%= link_to 'Edit', edit_deposit_path(deposit), :class => 'btn btn-mini' %>
