@@ -35,7 +35,7 @@
   <div class="row">
     <div class="span8"><%= yield %></div>
     <div class="span4">
-      <h2>Deposits Under Alert Period</h2>
+      <h2>Deposits Under Expiry Period (30 days)</h2>
        <%= Deposit.count_under_expiry_alert_period %> out of total <%= Deposit.count %> Deposits
     </div>
   </div>
