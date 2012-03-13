@@ -18,5 +18,9 @@
 #field :start_date, :type => Date
 
 Deposit.delete_all
-Deposit.create(bank_name: "Discover", account_number: "1234", fixed_income_account_type: "CD", amount: "17452.50", term_in_days: 365, apr: 3.25, compounding_times:2, start_date: Date.today - 10.days )
-Deposit.create(bank_name: "Ing Direct", account_number: "9876", fixed_income_account_type: "Savings", amount: "17452.50", term_in_days: 365, apr: 1.25, compounding_times:365, start_date: Date.today- 12.days )
+Deposit.create(bank_name: "Discover", phone_number: "1-800-253-2737", account_number: "1234", fixed_income_account_type: "CD",
+               amount: "17452.50", term_in_days: 365, apr: 3.25, compounding_times:2, start_date: Date.today - 10.days,
+               comment: "I like this Bank")
+Deposit.create(bank_name: "Ing Direct", phone_number: "1-800-253-2737", account_number: "9876", fixed_income_account_type: "Savings",
+               amount: "17452.50", term_in_days: 365, apr: 1.25, compounding_times:365, start_date: Date.today- 12.days,
+               comment: "Nice rate achieved")
