@@ -38,12 +38,13 @@
       </ul>
 
       <ul class="actions" style="margin:20px;">
-        <%= link_to 'Edit', edit_deposit_path(deposit), :class => 'btn btn-mini', :style => "color: #006b95;" %>
-        <%= link_to 'Destroy', deposit_path(deposit), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger', :style => "color: #dd0000;" %>
-        <%= link_to 'Confirm', "confirm", :class => 'btn btn-mini btn-danger', :style => "color: #dd0000;" %>
+        <%= link_to 'Confirm Correct Info (Reached expiry period)', "confirm",  :style => "color: #006b95;", :class => 'btn' %> <br/>
+        <%= link_to 'Edit', edit_deposit_path(deposit), :style => "color: #006b95;" %>
+        <%= link_to 'Destroy', deposit_path(deposit), :method => :delete, :confirm => 'Are you sure?',  :style => "color: #dd0000;", :class => 'btn' %>
+
       </ul>
     </div>
 <% end %>
 
 
-<%= link_to 'New', new_deposit_path, :class => 'btn btn-primary' %>
+<%= link_to 'New', new_deposit_path, :class => 'btn' %>
