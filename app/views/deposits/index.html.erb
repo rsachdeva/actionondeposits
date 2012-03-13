@@ -29,22 +29,26 @@
         <li class="CompoundingTimes">
           Compounding Times : <%= deposit.compounding_times %>
         </li>
-        <li class="APY">
-          APY: <%= deposit.apy %> %
-        </li>
+        <% if deposit.apy.present? %>
+            <li class="APY">
+              APY: <%= deposit.apy %> %
+            </li>
+        <% end %>
         <li class="Comments">
           Comment: <%= deposit.comment %>
         </li>
       </ul>
 
       <ul class="actions" style="margin:20px;">
-        <%= link_to 'Confirm Correct Info (Reached expiry period)', "confirm",  :style => "color: #006b95;", :class => 'btn' %> <br/>
+        <% if deposit.under_expiry_alert_period? %>
+          <%= link_to 'Confirm Correct Info (Reached expiry period)', "confirm",  :style => "color: #006b95; margin-bottom: 10px;", :class => 'btn' %> <br/>
+        <% end %>
         <%= link_to 'Edit', edit_deposit_path(deposit), :style => "color: #006b95;" %>
-        <%= link_to 'Destroy', deposit_path(deposit), :method => :delete, :confirm => 'Are you sure?',  :style => "color: #dd0000;", :class => 'btn' %>
+        <%= link_to 'Destroy', deposit_path(deposit), :method => :delete, :confirm => 'Are you sure?',  :style => "color: #dd0000;" %>
 
       </ul>
     </div>
 <% end %>
 
 
-<%= link_to 'New', new_deposit_path, :class => 'btn' %>
+<%= link_to 'New Deposit', new_deposit_path %>
