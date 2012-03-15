@@ -17,6 +17,8 @@ class Deposit
   field :comment, :type => String
   field :confirmation_taken, :type => Boolean, :default => false
 
+  validates_presence_of :start_date, :term_in_days
+
   # when confirm asked then start_date should be moving target and hence should be updated
   def under_expiry_alert_period?
     (Date.today > deadline_for(BEFORE_MAX) ) && !self.confirmation_taken

@@ -41,6 +41,7 @@ end
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
+  gem 'timecop'
   gem 'minitest'
   gem 'capybara'
   gem 'turn'
