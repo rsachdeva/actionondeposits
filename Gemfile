@@ -31,18 +31,23 @@ end
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
 group :test do
   gem 'timecop'
   gem 'minitest'
   gem 'capybara'
   gem 'turn'
+end
+
+
+group :development do
+  # To use debugger
+  gem 'ruby-debug19', :require => 'ruby-debug'
+  # Use unicorn as the web server
+  gem 'unicorn'
+end
+
+
+group :deployment do
+  # Deploy with Capistrano
+  gem 'capistrano'
 end
