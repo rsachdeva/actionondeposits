@@ -37,6 +37,7 @@ group :test do
   gem 'capybara'
   gem 'turn'
   gem 'database_cleaner'
+  gem 'simplecov', :require => false
 end
 
 
