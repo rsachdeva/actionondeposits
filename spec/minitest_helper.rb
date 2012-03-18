@@ -4,6 +4,14 @@ require "minitest/autorun"
 require "capybara/rails"
 require "active_support/testing/setup_and_teardown"
 
+# Database cleaner.
+DatabaseCleaner.strategy = :truncation
+class MiniTest::Spec
+  before :each do
+    DatabaseCleaner.clean
+  end
+end
+
 class IntegrationTest < MiniTest::Spec
   include Rails.application.routes.url_helpers
   include Capybara::DSL

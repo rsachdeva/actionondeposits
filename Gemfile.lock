@@ -73,6 +73,7 @@ GEM
       execjs
     coffee-script-source (1.2.0)
     columnize (0.3.6)
+    database_cleaner (0.7.1)
     eco (1.0.0)
       coffee-script
       eco-source
@@ -192,6 +193,7 @@ DEPENDENCIES
   capistrano
   capybara
   coffee-rails (~> 3.2.1)
+  database_cleaner
   jquery-rails
   minitest
   mongoid!

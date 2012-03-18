@@ -36,6 +36,7 @@ group :test do
   gem 'minitest'
   gem 'capybara'
   gem 'turn'
+  gem 'database_cleaner'
 end
 
 
