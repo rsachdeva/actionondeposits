@@ -7,6 +7,17 @@ GIT
       mongo (~> 1.3)
       tzinfo (~> 0.3.22)
 
+GIT
+  remote: https://github.com/rawongithub/minitest-rails.git
+  revision: b8997a7044b41d4c372b7a071927f376864b8104
+  branch: gemspec
+  specs:
+    minitest-rails (0.0.5)
+      actionpack (~> 3.1)
+      activesupport (~> 3.1)
+      minitest (~> 2.10)
+      railties (~> 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -200,6 +211,7 @@ DEPENDENCIES
   database_cleaner
   jquery-rails
   minitest
+  minitest-rails!
   mongoid!
   rails (= 3.2.1)
   ruby-debug19

@@ -7,7 +7,7 @@ require 'simplecov'
  end
 
 require File.expand_path("../../config/environment", __FILE__)
-
+require "minitest/rails"
 require "minitest/autorun"
 require "minitest/pride"
 require "capybara/rails"

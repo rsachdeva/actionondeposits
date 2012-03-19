@@ -34,6 +34,7 @@ end
 group :test do
   gem 'timecop'
   gem 'minitest'
+  gem 'minitest-rails', git: 'https://github.com/rawongithub/minitest-rails.git', branch: 'gemspec'
   gem 'capybara'
   gem 'turn'
   gem 'database_cleaner'
