@@ -32,6 +32,12 @@ end
 # gem 'jbuilder'
 
 group :test do
+  gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
   gem 'timecop'
   gem 'minitest'
   gem 'minitest-rails', git: 'https://github.com/rawongithub/minitest-rails.git', branch: 'gemspec'
