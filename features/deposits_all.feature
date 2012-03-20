@@ -5,7 +5,8 @@ Feature: Deposits
 
 Scenario: display all deposits
   Given the date is 2010-02-17
-  And I create the following deposits:
+  And the following deposits exist:
     | bank_name                |
     | NiceBank                 |
-
+  When I have load maturing deposits page
+  Then I should see "Nice Bank"
