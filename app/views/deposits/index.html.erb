@@ -21,7 +21,7 @@
           Start Date: <%= deposit.start_date %>
         </li>
         <li class="Duration">
-          Duration: <%= deposit.term_in_days/365 %> Year
+          Duration: <%= (deposit.term_in_days/365.0).to_f.round(2) %> Year
         </li>
         <li class="APR">
           APR: <%= deposit.apr %> %

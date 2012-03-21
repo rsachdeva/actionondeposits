@@ -30,10 +30,11 @@ end
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
-
+# http://techiferous.com/2010/04/using-capybara-in-rails-3/
 group :test do
   gem 'capybara'
   gem 'capybara-webkit'
+  gem 'launchy'
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'database_cleaner'

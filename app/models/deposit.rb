@@ -16,7 +16,7 @@ class Deposit
   field :start_date, :type => Date
   field :comment, :type => String
 
-  validates_presence_of :start_date, :term_in_days
+  validates_presence_of :bank_name, :account_number, :start_date, :term_in_days
 
   # when confirm asked then start_date should be moving target and hence should be updated
   # start_date and/or term_in_days should be changed  to remove it from alert period
@@ -25,6 +25,9 @@ class Deposit
   end
 
   def under_expiry_alert_period?
+    puts "Date.today is #{Date.today.inspect}"
+    puts "deadline_for(BEFORE_MAX) is #{deadline_for(BEFORE_MAX).inspect}"
+    puts " Date.today > deadline_for(BEFORE_MAX) is #{ Date.today > deadline_for(BEFORE_MAX)}"
     Date.today > deadline_for(BEFORE_MAX)
   end
 
