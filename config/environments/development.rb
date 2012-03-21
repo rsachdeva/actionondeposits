@@ -34,4 +34,7 @@ Ecatalog::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.mongoid.logger = Logger.new($stdout, :warn)
+  config.mongoid.persist_in_safe_mode = true
 end

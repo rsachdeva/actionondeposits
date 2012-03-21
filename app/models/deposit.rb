@@ -17,6 +17,11 @@ class Deposit
   field :comment, :type => String
 
   validates_presence_of :bank_name, :account_number, :start_date, :term_in_days
+  validate :today_check
+
+  def today_check
+    errors.add(:start_date, "is before todays date") unless self.start_date >= Date.today
+  end
 
   # when confirm asked then start_date should be moving target and hence should be updated
   # start_date and/or term_in_days should be changed  to remove it from alert period
