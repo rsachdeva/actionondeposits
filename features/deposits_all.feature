@@ -8,5 +8,5 @@ Scenario: display all deposits
   And the following deposits exist:
     | bank_name                |
     | NiceBank                 |
-  When I have load maturing deposits page
+  When I load maturing deposits page
   Then I should see "Nice Bank"
