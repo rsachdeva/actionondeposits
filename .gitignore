@@ -34,6 +34,7 @@
 /public/assets
 /tmp
 /vendor/bundle
+config/initializers/settings/
 
 # project tracking file
 ecatalog_progress_jmd.rtf
