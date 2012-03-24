@@ -1,6 +1,7 @@
 FactoryGirl.define do
   factory :deposit do
     bank_name "Ing Direct"
+    bank_website "www.ingdirect.com"
     phone_number "1-800-254-2737"
     account_number "9876"
     fixed_income_account_type "Savings"

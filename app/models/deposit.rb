@@ -5,6 +5,7 @@ class Deposit
   BEFORE_MAX = 10.freeze
 
   field :bank_name, :type => String
+  field :bank_website, :type => String
   field :account_number, :type => String
   field :phone_number, :type => String
   field :fixed_income_account_type
@@ -30,9 +31,6 @@ class Deposit
   end
 
   def under_expiry_alert_period?
-    puts "Date.today is #{Date.today.inspect}"
-    puts "deadline_for(BEFORE_MAX) is #{deadline_for(BEFORE_MAX).inspect}"
-    puts " Date.today > deadline_for(BEFORE_MAX) is #{ Date.today > deadline_for(BEFORE_MAX)}"
     Date.today > deadline_for(BEFORE_MAX)
   end
 

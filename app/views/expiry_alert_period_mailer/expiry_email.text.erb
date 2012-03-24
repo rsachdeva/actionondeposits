@@ -1,1 +1,13 @@
-Test test
+Deposits
+<% @deposits.each do |deposit| %>
+    <%  if deposit.under_expiry_alert_period? %>
+        Bank Name: <%= deposit.bank_name %>
+
+        Bank Website: <%= deposit.bank_website %>
+
+        Bank Contact Phone: <%= deposit.phone_number %>
+
+        Account Number: <%= deposit.account_number %>
+    <% end  %>
+
+<% end %>

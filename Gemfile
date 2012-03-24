@@ -10,6 +10,7 @@ gem 'bson_ext', '1.6.1'
 gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 gem 'jquery-rails'
 gem 'backbone-on-rails'
+gem 'whenever', require: false
 
 
 # Gems used only for assets and not required

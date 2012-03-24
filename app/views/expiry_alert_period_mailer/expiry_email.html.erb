@@ -1,1 +1,22 @@
-<b>Test html love</b>
+<h1>Deposits</h1>
+<% @deposits.each do |deposit| %>
+    <%  if deposit.under_expiry_alert_period? %>
+        <div class="interest" style="background:#ddd; borderradius:20px;margin: 10px; padding: 10px">
+          <ul class="details">
+            <li class="BankName">
+              Bank Name: <%= deposit.bank_name %>
+            </li>
+            <li class="BankWebsite">
+              Bank Website: <%= deposit.bank_website %>
+            </li>
+            <li class="BankPhone">
+              Bank Contact Phone: <%= deposit.phone_number %>
+            </li>
+            <li class="AccountNumber">
+              Account Number: <%= deposit.account_number %>
+            </li>
+          </ul>
+        </div>
+    <% end  %>
+
+<% end %>
