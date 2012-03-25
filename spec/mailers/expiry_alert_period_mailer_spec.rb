@@ -2,7 +2,7 @@ require "minitest_helper"
 
 describe ExpiryAlertPeriodMailer do
 
-  describe "attributes getting saved" do
+  describe "email delivery" do
     before do
       Timecop.travel(2007, 9, 25) do
         Deposit.create!(bank_name: "Discover", phone_number: "1-800-253-2737", account_number: "1234", fixed_income_account_type: "CD",

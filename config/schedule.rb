@@ -23,6 +23,6 @@ set :output, "#{path}/log/alert_email.log"
 
 
 every 1.day, :at => '11:59 am' do
-  runner "ExpiryAlertPeriodMailer.expiry_email.deliver"
+  runner "JobExpiryAlertEmail.perform"
 end
 
