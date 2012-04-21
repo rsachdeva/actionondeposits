@@ -1,4 +1,6 @@
 Ecatalog::Application.routes.draw do
+  
+  root to: "users#index"
   resources :deposits
 
   # The priority is based upon order of creation:

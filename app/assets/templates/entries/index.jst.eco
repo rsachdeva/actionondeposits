@@ -1,0 +1,46 @@
+<h1>Deposits</h1>
+
+<% for entry in @entries.models: %>
+   <div class="interest" style="background:#ddd; borderradius:20px;margin: 10px; padding: 10px">
+    <ul class="details">
+      <li class="BankName">
+      Bank Name: <%= entry.get('bank_name') %>
+      </li>
+      <li class="BankWebsite">
+      Bank Website: <%=  entry.get('bank_website') %>
+      </li>
+      <li class="BankPhone">
+      Bank Contact Phone: <%=  entry.get('phone_number') %>
+      </li>
+      <li class="AccountNumber">
+      Account Number: <%=  entry.get('account_number') %>
+      </li>
+      <li class="AccountType">
+      Account Type: <%= entry.get('fixed_income_account_type') %>
+      </li>
+      <li class="Amount">
+      Amount: <%= entry.get('amount') %>
+      </li>
+      <li class="StartDate">
+      Start Date: <%= entry.get('start_date') %>
+      </li>
+      <li class="Duration">
+      Duration: <%= Math.round(entry.get('term_in_days')/365.0) %> Year
+      </li>
+      <li class="APR">
+      APR: <%= entry.get('apr') %> %
+      </li>
+      <li class="CompoundingTimes">
+      Compounding Times : <%= entry.get('compounding_times') %>
+      </li>
+      <% if (!_.isNull(entry.get('apy'))): %>
+        <li class="APY">
+          APY: <%= entry.get('apy') %>
+        </li>
+      <% end %>
+      <li class="Comments">
+      Comments: <%= entry.get('comment') %>
+      </li>
+    </ul>
+  </div>
+<% end %>

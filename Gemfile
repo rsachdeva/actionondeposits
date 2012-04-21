@@ -52,7 +52,7 @@ end
 
 group :development do
   # To use debugger
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  # gem 'ruby-debug19', :require => 'ruby-debug'
   # Use unicorn as the web server
   gem 'unicorn'
 end

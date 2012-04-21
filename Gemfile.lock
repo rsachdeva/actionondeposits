@@ -50,7 +50,6 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.7)
     ansi (1.4.2)
-    archive-tar-minitar (0.5.2)
     arel (3.0.2)
     backbone-on-rails (0.9.1.0)
       eco (~> 1.0.0)
@@ -88,7 +87,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
-    columnize (0.3.6)
     cucumber (1.1.9)
       builder (>= 2.1.2)
       diff-lcs (>= 1.1.2)
@@ -129,8 +127,6 @@ GEM
     kgio (2.7.3)
     launchy (2.1.0)
       addressable (~> 2.2.6)
-    linecache19 (0.5.12)
-      ruby_core_source (>= 0.1.4)
     mail (2.4.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -175,16 +171,6 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
-    ruby-debug-base19 (0.11.25)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby_core_source (>= 0.1.4)
-    ruby-debug19 (0.11.6)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby-debug-base19 (>= 0.11.19)
-    ruby_core_source (0.1.5)
-      archive-tar-minitar (>= 0.5.2)
     rubyzip (0.9.6.1)
     sass (3.1.15)
     sass-rails (3.2.4)
@@ -248,7 +234,6 @@ DEPENDENCIES
   minitest-rails!
   mongoid!
   rails (= 3.2.1)
-  ruby-debug19
   sass-rails (~> 3.2.3)
   simplecov
   timecop
