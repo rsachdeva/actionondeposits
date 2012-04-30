@@ -47,6 +47,7 @@ group :test do
   gem 'turn'
   gem 'database_cleaner'
   gem 'simplecov', :require => false
+  gem 'json_spec'
 end
 
 
