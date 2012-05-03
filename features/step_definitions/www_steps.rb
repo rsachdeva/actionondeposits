@@ -1,5 +1,10 @@
 Given /^I load maturing deposits page$/ do
+  puts "deposits_path is #{deposits_path.inspect}"
   visit(deposits_path)
+end
+
+When /^I get "([^"]*)"$/ do |path_with_json|
+  visit(path_with_json)
 end
 
 Then /^I should see "([^"]*)"$/ do |text|
