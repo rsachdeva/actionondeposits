@@ -33,21 +33,19 @@ end
 # gem 'jbuilder'
 # http://techiferous.com/2010/04/using-capybara-in-rails-3/
 group :test do
+  gem 'minitest'
+  gem 'database_cleaner'
+  gem 'timecop'
+  gem 'turn'
+  gem 'simplecov'
+  gem 'factory_girl_rails'
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'launchy'
   gem 'cucumber'
   gem 'cucumber-rails'
-  gem 'database_cleaner'
-  gem 'factory_girl_rails'
-  gem 'timecop'
-  gem 'minitest'
-  gem 'minitest-rails', git: 'https://github.com/rawongithub/minitest-rails.git', branch: 'gemspec'
-  gem 'capybara'
-  gem 'turn'
-  gem 'database_cleaner'
-  gem 'simplecov', :require => false
-  gem 'json_spec'
+  gem 'json_spec', :require => false
+
 end
 
 

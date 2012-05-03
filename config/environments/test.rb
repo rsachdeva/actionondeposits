@@ -35,5 +35,6 @@ Ecatalog::Application.configure do
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
 
-  config.logger = Logger.new(STDOUT)
+  config.mongoid.logger = Logger.new($stdout, :warn)
+  config.mongoid.persist_in_safe_mode = true
 end

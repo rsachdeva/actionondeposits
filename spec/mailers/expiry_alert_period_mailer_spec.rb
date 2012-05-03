@@ -14,7 +14,6 @@ describe ExpiryAlertPeriodMailer do
 
     it "includes proper email subject" do
       subject.subject.must_equal "Maturing Deposits: 1 out of 1 require confirmation"
-      ActionMailer::Base.deliveries.empty?.must_equal false
       subject.encoded.must_match /\<li class=\"BankPhone\"\>/
       subject.encoded.must_match /Bank Contact Phone: 1-800-253-2737/
     end
