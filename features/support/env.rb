@@ -15,6 +15,14 @@ require "json_spec/cucumber"
 # steps to use the XPath syntax.
 Capybara.default_selector = :css
 
+def last_json
+  page.source
+end
+
+JsonSpec.configure do
+  exclude_keys "_id"
+end
+
 # By default, any exception happening in your Rails application will bubble up
 # to Cucumber so that your scenario will fail. This is a different from how 
 # your application behaves in the production environment, where an error page will 

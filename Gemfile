@@ -44,7 +44,7 @@ group :test do
   gem 'launchy'
   gem 'cucumber'
   gem 'cucumber-rails'
-  gem 'json_spec', :require => false
+  gem 'json_spec', :require => false, :git => 'git://github.com/collectiveidea/json_spec.git'
 
 end
 

@@ -1,5 +1,4 @@
 Given /^I load maturing deposits page$/ do
-  puts "deposits_path is #{deposits_path.inspect}"
   visit(deposits_path)
 end
 
