@@ -48,6 +48,9 @@ group :test do
 
 end
 
+group :development, :test do
+  gem 'jasmine'
+end
 
 group :development do
   # To use debugger
