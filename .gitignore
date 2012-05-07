@@ -34,6 +34,7 @@
 /public/assets
 /tmp
 /vendor/bundle
+.jhw-cache/
 config/initializers/settings/
 
 # project tracking file

@@ -3,6 +3,8 @@ Ecatalog::Application.routes.draw do
   root to: "users#index"
   resources :deposits
 
+  mount JasmineRails::Engine => "/specs" unless Rails.env.production?
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
