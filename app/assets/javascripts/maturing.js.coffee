@@ -1,11 +1,11 @@
-window.Raffler =
+window.Maturing =
   Models: {}
   Collections: {}
   Views: {}
   Routers: {}
   init: ->
-    new Raffler.Routers.Entries()
+    new Maturing.Routers.Entries()
     Backbone.history.start()
 
 $(document).ready ->
-  Raffler.init()
+  Maturing.init()

@@ -1,4 +1,4 @@
-class Raffler.Views.EntriesIndex extends Backbone.View
+class Maturing.Views.EntriesIndex extends Backbone.View
   template: JST['entries/index']
 
   initialize: ->

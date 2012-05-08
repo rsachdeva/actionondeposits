@@ -1,9 +1,8 @@
-
-describe 'Raffler.Models.Entry', ->
+describe 'Maturing.Models.Entry', ->
   it 'should be defined', ->
-    (expect Raffler.Models.Entry).toBeDefined()
+    (expect Maturing.Models.Entry).toBeDefined()
 
   it 'can be instantiated', ->
-    entry = new Raffler.Models.Entry()
+    entry = new Maturing.Models.Entry()
     (expect entry).not.toBeNull()
 

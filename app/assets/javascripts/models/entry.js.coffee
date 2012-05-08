@@ -1,3 +1,3 @@
-class Raffler.Models.Entry extends Backbone.Model
+class Maturing.Models.Entry extends Backbone.Model
 
 

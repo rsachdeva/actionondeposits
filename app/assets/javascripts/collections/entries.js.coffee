@@ -1,2 +1,2 @@
-class Raffler.Collections.Entries extends Backbone.Collection
+class Maturing.Collections.Entries extends Backbone.Collection
   url: '/deposits'
