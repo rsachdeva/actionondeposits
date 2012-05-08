@@ -49,7 +49,8 @@ group :test do
 end
 
 group :development, :test do
-  gem 'jasmine-rails', :git => "git://github.com/searls/jasmine-rails.git"
+  gem "jasminerice"
+  gem "guard-jasmine"
 end
 
 group :development do

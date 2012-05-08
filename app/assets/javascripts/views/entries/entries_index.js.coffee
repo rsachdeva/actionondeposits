@@ -5,5 +5,5 @@ class Raffler.Views.EntriesIndex extends Backbone.View
     @collection.on('reset', @render, this)
 
   render: ->
-    #TODO: $(@el).html(@template(entries: @collection))
+    $(@el).html(@template(entries: @collection))
     this
