@@ -1,12 +1,13 @@
 begin
   ENV["RAILS_ENV"] ||= "test"
-  require File.expand_path("../../config/environment", __FILE__)
   require 'simplecov'
   SimpleCov.start do
-      add_filter '/spec/'
-      add_filter '/vendor/'
-     add_filter '/config/'
+    add_filter '/spec/'
+    add_filter '/vendor/'
+    add_filter '/config/'
   end
+  require File.expand_path("../../config/environment", __FILE__)
+
 
   puts "Rails.env is #{Rails.env.inspect}"
   require 'minitest/spec'
