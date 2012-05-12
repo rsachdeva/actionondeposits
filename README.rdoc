@@ -7,6 +7,13 @@ Server Side: Rails 3.2, JSON API, ActionMailer, Whenever for Cron, Mongoid, Mong
 Client Side: Backbone.js, CoffeeScript for JavaScript, Twitter Bootstrap.
         Test: Jasmine, Jasminrice
 
+To run all tests for Server and Client:
+
+bundle exec rake
+
+
+
+Cheers!
 
 - Rohit Sachdeva
 2009-2012 Copyright DRInnovations LLC, USA (www.drinnovations.us)
