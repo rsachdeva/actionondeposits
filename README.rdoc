@@ -1,11 +1,10 @@
-Take action on deposits.
-
-Technology Stack Integrated:
+Take action on deposits. Version 0.8v open sourced for developers for the.
+technology Stack Integrated to learn Test Driven Env on Server and Client side.
 
 Server Side: Rails 3.2, JSON API, ActionMailer, Whenever for Cron, Mongoid, MongoDB
         Test: RSpec, Cucumber, JSON SPec
 
-Client Side: Backbone.js, CoffeeScript, Twitter Bootstrap
+Client Side: Backbone.js, CoffeeScript for JavaScript, Twitter Bootstrap.
         Test: Jasmine, Jasminrice
 
 
