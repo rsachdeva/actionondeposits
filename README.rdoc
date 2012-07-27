@@ -1,5 +1,5 @@
-Take action on deposits. Version 0.8 open sourced for developers for the
-technology Stack Integrated so that other developers can learn more about Integrated Test Driven env both for Server and Client sides.
+Take action on deposits. Version 0.8 open sourced for developers for the following
+technology Stack Integrated:
 
 Server Side: Rails 3.2, JSON API, ActionMailer, Whenever for Cron, Mongoid, MongoDB
         Test: Minitest Spec, Cucumber, JSON SPec
